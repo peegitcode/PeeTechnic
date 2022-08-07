@@ -15,6 +15,15 @@ class MyConstant {
         color: Color.fromARGB(255, 4, 131, 235).withOpacity(0.5));
   }
 
+ BoxDecoration gradientBoxCenter() {
+    return BoxDecoration(
+        gradient: RadialGradient(
+          center: Alignment(0,0),
+          radius: 1.0, colors: [
+      Color.fromARGB(255, 251, 252, 255),
+      Color.fromARGB(255, 20, 155, 233)
+    ]));
+  }
   BoxDecoration gradientBox() {
     return BoxDecoration(
         gradient: RadialGradient(

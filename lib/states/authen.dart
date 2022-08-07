@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:peetechnic/states/create_account.dart';
 import 'package:peetechnic/utility/my_constant.dart';
 import 'package:peetechnic/widgets/show_button.dart';
 import 'package:peetechnic/widgets/show_form.dart';
@@ -38,7 +39,12 @@ class Authen extends StatelessWidget {
                   const ShowText(text: 'Non Account ? '),
                   ShowTextButton(
                     label: 'Create Account',
-                    pressFunc: () {},
+                    pressFunc: () {
+                      print('you click create account');
+                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                       return const CreateAccount(); 
+                      },));
+                    },
                   ),
                 ],
               ),
